@@ -1,0 +1,123 @@
+.container {
+	min-height: 60vh;
+}
+
+.menu {
+	top: 0;
+	position: fixed;
+}
+
+.container {
+	margin: calc(56px + 10vh) 36px;
+}
+
+.title {
+	color: var(--white);
+	font-size: 40px;
+	font-weight: 900;
+	margin-top: 48px;
+	text-align: center;
+}
+
+.about-info {
+	margin: 0 auto;
+	max-width: 550px;
+}
+
+.head-start {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap-reverse;
+	    flex-wrap: wrap-reverse;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+.about-start,
+.about-item {
+	background-color: var(--white);
+	border-radius: 4px;
+	-webkit-box-shadow: var(--default-shadow);
+	        box-shadow: var(--default-shadow);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	line-height: 1.7;
+	margin: 24px;
+	padding: 24px;
+	width: 30ch;
+}
+
+.about-item {
+	margin: 24px auto;
+	width: 100%;
+}
+
+.about-start h2,
+.about-item h3 {
+	margin: 0;
+}
+
+.about-head {
+	height: 200px;
+}
+
+.jquery-plugin {
+	border: 3px solid var(--white);
+	border-radius: 4px;
+	-webkit-box-shadow: var(--default-shadow);
+	        box-shadow: var(--default-shadow);
+	margin: 56px auto;
+	max-width: 1200px;
+	width: 80vw;
+}
+
+.page-footer {
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: var(--orange);
+	border-top: 2px solid var(--white);
+	color: var(--white);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 48px;
+	min-height: 30vh;
+}
+
+.back-to-top,
+.back-to-top a,
+.back-to-top a:visited {
+	color: var(--white);
+	font-size: x-large;
+	margin: 36px 0;
+}
+
+.back-to-top a:hover {
+	opacity: 0.8;
+}
+
+.footer-copyright {
+	margin: 12px 0 48px 0;
+}
+
+@media (max-width: 600px) {
+	.head-start {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}

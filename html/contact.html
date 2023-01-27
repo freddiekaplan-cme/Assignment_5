@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Contact Freddie Kaplan about exciting opportunites in web development.">
+  	<link rel="stylesheet" href="../styles/freddie.css">
+	<link rel="stylesheet" href="../styles/menus.css">
+	<link rel="stylesheet" href="../styles/contact.css">
+	<link rel="stylesheet" href="../styles/typography.css">
+	<link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="../assets/fontawesome/css/solid.min.css">
+	<script src="../scripts/jquery-3.6.2.min.js"></script>	
+	<script defer src="../scripts/freddie.js"></script>
+
+	<title>Contact | Freddie Kaplan</title>
+</head>
+
+<body class="background">
+    <header id="header-start">
+		<nav class="menu">
+			<a href="/index.html">
+				<div class="menu-item">HOME</div>
+			</a>
+			<a href="/html/about.html">
+				<div class="menu-item">ABOUT</div>
+			</a>
+			<div class="menu-item current" id="projects-menu-item">PROJECTS</div>
+			<div class="project-menu">
+				<a href="/html/projects.html"><div class="menu-item sub-menu-link">ALL PROJECTS</div></a>
+				<div class="menu-item sub-menu-item sub-work">WORK</div>
+				<div class="sub-sub-menu sub-work-menu">
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://www.lexratio.se/"><span>Lex Ratio AB<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://www.freetourstockholm.com/"><span>Free Tour Stockholm AB<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://www.martinholmen.se/"><span>Martin Holmén<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+				</div>
+				<div class="menu-item sub-menu-item">PERSONAL</div>
+				<div class="sub-sub-menu sub-personal-menu">
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://www.freddiekaplan.se/labyrinth/"><span>Labyrinth Game<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://www.freddiekaplan.se/magic/"><span>$50 Commander<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://www.gunplasearch.se/"><span>Gunpla Search<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+				</div>
+				<div class="menu-item sub-menu-item">GITHUB</div>
+				<div class="sub-sub-menu sub-github-menu">
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://github.com/freddiekaplan-cme/Assignment_3"><span>Labyrinth Game<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://github.com/freddiekaplan-cme/Assignment_4"><span>$50 Commander<i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+					<div class="menu-item sub-sub-menu-item">
+						<a href="https://github.com/freddiekaplan-cme/Assignment_1"><span>Dummy Site <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+					</div>
+				</div>
+			</div>
+			<a href="/html/contact.html">
+				<div class="menu-item current">CONTACT</div>
+			</a>
+		</nav>
+	</header>
+	<main class="container">
+		<h1 class="title">CONTACT</h1>
+		<div id="contact-form">
+			<form id="form" method="post" action="mailto:freddie.kaplan@edu.cmeducations.se">
+				
+				<label for="name">Name</label><br>
+				<input type="text" id="name" name="name"><br>
+
+				<label for="name">E-mail</label><br>
+				<input type="email" id="e-mail" name="e-mail"><br>
+
+				<label for="subject">Subject</label><br>
+				<input type="text" id="subject" name="subject"><br>
+
+				<label for="message">Message</label><br>
+				<textarea id="message" name="message"></textarea>
+				<div class="kap-tcha">
+					<h3>"Kap-tcha"</h3><p>Enter this passphrase to be able to send:</p>
+					<p><code>I want to hire you!</code></p>
+					<div class="kap-tcha-fields">
+						<input type="text" id="kap-tcha" placeholder="passphrase" required>
+						<span id="checkmark"></span>
+					</div>
+				</div>
+			</form>
+			<div class="buttons">
+				<button id="clear-button">CLEAR</button>
+				<button id="send-button">SEND</button>
+			</div>
+    	</div>
+	</main>
+    <footer class="page-footer">
+        <div class="back-to-top">
+          <a href="#header-start"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+        <div class="footer-copyright">&copy; Freddie Kaplan 2023</div>
+    </footer>
+</body>
+
+</html>

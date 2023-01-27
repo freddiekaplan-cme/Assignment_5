@@ -1,0 +1,334 @@
+:root {
+	--default-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	--head-height: 20vw;
+	--star-size: 30vw;
+	--blue: rgb(127, 206, 255);
+	--medium-blue: rgb(38, 132, 191);
+	--dark-blue: rgb(43, 148, 213);
+	--darkest-blue: rgb(39, 125, 179);
+	--orange: rgb(220, 123, 33);
+	--yellow: rgb(255, 213, 25);
+	--white: rgb(244, 233, 222);
+	--hover-white: rgb(255, 245, 234);
+}
+
+html {
+	height: 100vh;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(127, 206, 255);
+    height: 100%;
+	margin: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+a {
+	color: var(--medium-blue);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--dark-blue);
+}
+
+.background {
+	  background-size: 100% 100%;
+	  background-position: top left;
+	  background-image: repeating-linear-gradient(
+		25deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0.1) 10px,
+		transparent 10px,
+		transparent 20px
+	  );
+}
+
+.title {
+	color: var(--white);
+	font-size: 40px;
+	font-weight: 900;
+	margin-top: 48px;
+	text-align: center;
+}
+
+.madness-menu.show-menu,
+nav.menu.show-menu {
+    top: 0;
+}
+
+.madness-menu,
+.menu {
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	margin: 0;
+	position: absolute;
+	top: -80px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	z-index: 50;
+}
+
+.menu-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+	background-color: var(--medium-blue);
+	border: 1px solid var(--darkest-blue);
+	color: var(--white);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;	
+	-webkit-box-orient: vertical;	
+	-webkit-box-direction: normal;	
+	    -ms-flex-direction: column;	
+	        flex-direction: column;
+	height: 80px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 24px;
+	text-align: center;
+	width: 25vw;
+}
+
+.project-menu {
+	display: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	left: 50vw;
+	position: absolute;
+	top: 80px;
+	z-index: 20;
+}
+
+.sub-menu-item,
+.sub-menu-link,
+.sub-sub-menu-item {
+	height: 60px;
+}
+
+.sub-sub-menu {
+	display: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	position: absolute;
+	right: 25vw;
+}
+
+.sub-sub-menu a,
+.sub-sub-menu a:hover,
+.sub-sub-menu a:visited {
+	color: var(--white);
+}
+
+.project-menu.active,
+.active-menu + div.sub-sub-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.sub-work-menu {
+	top: 60px;
+}
+
+.sub-personal-menu {
+	top: 120px;
+}
+
+.sub-github-menu {
+	top: 180px;
+}
+
+.menu-item:hover {
+	background-color: var(--dark-blue);
+}
+
+.active-menu,
+.sub-sub-menu-item,
+div.current {
+	background-color: var(--darkest-blue);
+}
+
+.fa-arrow-up-right-from-square {
+	font-size: 10px;
+	margin-left: 4px;
+}
+
+.container {
+	position: relative;
+}
+
+.home-title {
+	left: -100%;
+	position: absolute;
+	top: 40px;
+	-webkit-transition: left 1.7s;
+	transition: left 1.7s;
+	width: 45ch;
+	z-index: 30;
+}
+
+.home-title > .title {
+	color: var(--white);
+	font-size: 40px;
+	font-weight: 900;
+	margin: 48px 0 0 0;
+	text-align: center;
+}
+
+.home-title > h2.title {
+	font-size: 20px;
+	margin: 0;
+}
+
+.show-title {
+	left: calc(50vw - 45ch/2);
+}
+
+.rotate-star {
+	-webkit-animation: rotation 20s linear infinite;
+	        animation: rotation 20s linear infinite;
+	background-color: var(--yellow);
+	-webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	height: var(--star-size);
+    left: calc(50vw - var(--star-size) / 2);
+	position: absolute;
+	top: calc(50vh - var(--star-size) / 2);
+	width: var(--star-size);
+}
+
+.yellow-star {
+	z-index: 20;
+}
+
+.orange-star {
+	-webkit-animation: rotation 19s linear infinite;
+	        animation: rotation 19s linear infinite;
+	background-color: var(--orange);
+	-webkit-clip-path: polygon(50% 100%, 61% 65%, 98% 65%, 68% 43%, 79% 9%, 50% 30%, 21% 9%, 32% 43%, 2% 65%, 39% 65%);
+	        clip-path: polygon(50% 100%, 61% 65%, 98% 65%, 68% 43%, 79% 9%, 50% 30%, 21% 9%, 32% 43%, 2% 65%, 39% 65%);
+	z-index: 10;
+}
+
+.white-star {
+	-webkit-animation: rotation 17s linear infinite;
+	        animation: rotation 17s linear infinite;
+	background-color: var(--white);
+}
+
+.stop-star-rotation {
+	-webkit-animation-play-state: paused;
+	        animation-play-state: paused;
+}
+
+main.container .floating-head {
+	height: var(--head-height);
+    left: calc(50vw - (var(--head-height) * 0.72) / 2); ;
+	position: absolute;
+	top: calc(50vh - var(--head-height) / 2);
+	z-index: 30;
+}
+
+.spinning,
+.floating-head {
+	cursor: pointer;
+}
+
+.footer	{
+	background-color: var(--orange);
+	border-top: 2px solid var(--white);
+	bottom: -20vh;
+	color: var(--white);
+	display: none;
+	height: 20vh;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	line-height: 1.8;
+	margin: 0;
+	padding: 12px;
+	position: absolute;
+	text-align: center;
+	-webkit-transition: bottom 0.5s;
+	transition: bottom 0.5s;
+	width: 100%;
+	z-index: 50;
+}
+
+.footer a {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.footer-text {
+	font-size: 16px;
+	margin: 0;
+	padding-top: 12px;
+}
+
+footer.footer.show-footer {
+	bottom: 0;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+		        transform: rotate(359deg);
+	}
+}
+
+@keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+		        transform: rotate(359deg);
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--head-height: 50vw;
+		--star-size: 80vw;
+	}
+	
+	.footer-text {
+		padding: 8px;
+	}
+}
+
+@media (max-width: 600px) {
+	.menu {
+		font-size: 12px;
+	}
+
+	.footer-text {
+		font-size: 14px;
+	}
+}
