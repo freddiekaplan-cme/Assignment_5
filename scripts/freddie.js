@@ -4,11 +4,6 @@ $(".floating-head").on("click", function () {
 	$(".footer").toggleClass("show-footer");
 	$(".footer").slideToggle(700);
 	$(".home-title").toggleClass("show-title");
-	//$(".home-title").slideToggle(1300);
-	/*
-	$(".menu").toggleClass("show-menu");
-	$(".menu").slideToggle(700);
-	*/
 	if ($(".menu").hasClass("show-menu")) {
 		$(".menu").toggleClass("show-menu");
 		$(".level-one").slideUp(300);
