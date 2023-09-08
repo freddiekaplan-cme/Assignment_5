@@ -1,4 +1,4 @@
-# Frontend Assignment 5
+# Frontend: Assignment 5
 The final assignment for the frontend course was a portfolio site to show off some of the projects we've made and implementing all of what we've learned in the course.
 
 ## What I Used
